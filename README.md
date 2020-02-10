@@ -1,6 +1,6 @@
 # reporter-agh
 
-Students project on subject Object-Oriented Technology. JavaFX desktop application for created tickets in company.
+Students project on subject Object-Oriented Technology created in small group. JavaFX desktop application for created tickets in company.
 
 <p align="center">
   <br>
