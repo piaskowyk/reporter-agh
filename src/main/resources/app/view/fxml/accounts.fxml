@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1114.0" style="-fx-background-color: #F7FFF7;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.AccountsController">
+    <left>
+        <fx:include source="/app/view/fxml/components/menu.fxml" />
+    </left>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <top>
+                <Pane prefHeight="78.0" prefWidth="629.0" style="-fx-background-color: #1A535C;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="moduleNameLabel" layoutX="14.0" layoutY="25.0" text="Accounts" textFill="#f7fff7">
+                            <font>
+                                <Font name="Ubuntu" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <Pane prefHeight="33.0" prefWidth="849.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="statusLabel" layoutX="14.0" layoutY="8.0" />
+                    </children>
+                </Pane>
+            </bottom>
+            <center>
+                <VBox prefHeight="645.0" prefWidth="849.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <BorderPane fx:id="areaChartContainer" prefHeight="649.0" prefWidth="849.0">
+                            <center>
+                                <TableView fx:id="accountsTable" prefWidth="649.0" BorderPane.alignment="CENTER">
+                                    <columns>
+                                        <TableColumn fx:id="usernameColumn" prefWidth="150.0" text="Username"/>
+                                        <TableColumn fx:id="nameColumn" prefWidth="150.0" text="Name"/>
+                                        <TableColumn fx:id="surnameColumn" prefWidth="150.0" text="Surname"/>
+                                        <TableColumn fx:id="usertypeColumn" prefWidth="150.0" text="User type"/>
+                                    </columns>
+                                    <columnResizePolicy>
+                                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    </columnResizePolicy>
+                                </TableView>
+                            </center>
+                            <right>
+                                <VBox alignment="TOP_CENTER" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                    <opaqueInsets>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </opaqueInsets>
+                                    <children>
+                                        <Button fx:id="deleteButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDeleteAction" text="Delete">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </VBox.margin></Button>
+                                        <Button fx:id="editButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleEditAction" text="Edit">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                        <Button fx:id="addButton" alignment="TOP_CENTER" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAddAction" text="Add">
+                                            <VBox.margin>
+                                                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                            </VBox.margin>
+                                        </Button>
+                                    </children>
+                                    <BorderPane.margin>
+                                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                    </BorderPane.margin>
+                                </VBox>
+                            </right>
+                        </BorderPane>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </center>
+</BorderPane>
+

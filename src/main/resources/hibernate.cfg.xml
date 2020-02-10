@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="show_sql">true</property>
+        <property name="format_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.SQLiteDialect</property>
+        <property name="connection.driver_class">org.sqlite.JDBC</property>
+        <property name="connection.url">jdbc:sqlite:reporter.db</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="hibernate.connection.autocommit">true</property>
+
+        <mapping class="app.entity.User"/>
+        <mapping class="app.entity.Report"/>
+        <mapping class="app.entity.ReportType"/>
+        <mapping class="app.entity.ReportStatusHistoryTuple"/>
+        <mapping class="app.entity.FormField"/>
+        <mapping class="app.entity.FormFieldPattern"/>
+        <mapping class="app.entity.Message"/>
+
+    </session-factory>
+</hibernate-configuration>

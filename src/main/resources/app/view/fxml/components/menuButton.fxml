@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.image.ImageView?>
+
+<Pane prefHeight="65.0" prefWidth="267.0" styleClass="btnMenu" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <Label fx:id="label" layoutX="71.0" layoutY="22.0" text="Dashboard" textFill="#f7fff7">
+            <font>
+                <Font name="Ubuntu" size="18.0"/>
+            </font>
+        </Label>
+        <ImageView layoutX="17.0" layoutY="18.0">
+            <image>
+                <!--                                        <Image url="@img/iconDashboard.png" />-->
+            </image>
+        </ImageView>
+    </children>
+</Pane>

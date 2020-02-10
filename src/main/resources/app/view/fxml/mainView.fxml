@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="695.0" prefWidth="1114.0" style="-fx-background-color: #F7FFF7;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.MainViewController">
+    <left>
+        <fx:include source="/app/view/fxml/components/menu.fxml" />
+    </left>
+    <center>
+        <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <top>
+                <Pane prefHeight="78.0" prefWidth="629.0" style="-fx-background-color: #1A535C;" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="moduleNameLabel" layoutX="14.0" layoutY="25.0" text="Dashboard" textFill="#f7fff7">
+                            <font>
+                                <Font name="Ubuntu" size="24.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </Pane>
+            </top>
+            <bottom>
+                <Pane prefHeight="33.0" prefWidth="849.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <Label fx:id="statusLabel" layoutX="14.0" layoutY="8.0" />
+                    </children>
+                </Pane>
+            </bottom>
+            <center>
+                <VBox prefHeight="645.0" prefWidth="849.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <BorderPane fx:id="areaChartContainer" prefHeight="391.0" prefWidth="849.0">
+                     <center>
+                        <BorderPane prefHeight="200.0" prefWidth="849.0" BorderPane.alignment="CENTER">
+                           <center>
+                              <Label text="Gang skeduling" BorderPane.alignment="CENTER" />
+                           </center></BorderPane>
+                     </center></BorderPane>
+                        <BorderPane prefHeight="270.0" prefWidth="849.0">
+                            <center>
+                                <GridPane BorderPane.alignment="CENTER">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                                            <center>
+                                                <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <ImageView fitHeight="85.0" fitWidth="85.0" layoutX="161.0">
+                                                            <image>
+<!--                                                                <Image url="@img/iconfinder_MONEY_2-08_2812119%20(1).png" />-->
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </Pane>
+                                            </center>
+                                        </BorderPane>
+                                        <BorderPane fx:id="circleChartContainer" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
+                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                                            <center>
+                                                <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <ImageView layoutX="197.0" layoutY="21.0">
+                                                            <image>
+<!--                                                                <Image url="@img/plus.png" />-->
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </Pane>
+                                            </center>
+                                        </BorderPane>
+                                        <BorderPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                            <center>
+                                                <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                                    <children>
+                                                        <ImageView layoutX="201.0" layoutY="25.0">
+                                                            <image>
+<!--                                                                <Image url="@img/minus.png" />-->
+                                                            </image>
+                                                        </ImageView>
+                                                    </children>
+                                                </Pane>
+                                            </center>
+                                        </BorderPane>
+                                    </children>
+                                </GridPane>
+                            </center>
+                        </BorderPane>
+                    </children>
+                </VBox>
+            </center>
+        </BorderPane>
+    </center>
+</BorderPane>
