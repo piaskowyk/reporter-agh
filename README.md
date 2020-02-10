@@ -4,6 +4,9 @@ Students project on subject Object-Oriented Technology created in small group. J
 
 <p align="center">
   <br>
-  <img src="https://raw.githubusercontent.com/piaskowyk/reporter-agh/master/img/s1.png" alt="reporter" width="30%">
-  <img src="https://raw.githubusercontent.com/piaskowyk/reporter-agh/master/img/s2.png" alt="reporter" width="30%">
+  <img src="https://raw.githubusercontent.com/piaskowyk/reporter-agh/master/img/s1.png" alt="reporter" width="50%">
+</p>
+<p align="center">
+  <br>
+  <img src="https://raw.githubusercontent.com/piaskowyk/reporter-agh/master/img/s1.png" alt="reporter" width="50%">
 </p>
